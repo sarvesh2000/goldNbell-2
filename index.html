@@ -1,0 +1,217 @@
+<!--  Sarvesh code  -->
+
+
+
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Taxi Page</title>
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+  </head>
+  <body>
+    <!--NavBar Code-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+        <a class="navbar-brand" href="index.html">
+            <img src="assets/imgs/frontal-taxi-cab.png" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Login</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Sign Up</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    <!--End of NavBar Code-->
+
+    <!--Main Container-->
+    <div class="jumbotron jumbotron-fluid" id="j1">
+            <div class="container">
+              <h1 class="display-4" style="color: white; font-weight: bold;">Get affordable rides around London in an instant</h1>
+              <!--Main form-->
+              <div class="container" id="f1">
+              <form>
+                  <div class="input">
+                    <div class="form-group">
+                      <label for="from">From</label>
+                      <input type="text" class="form-control" id="from" name="autocomplete_search" placeholder="Enter pickup location">
+                      <input type="hidden" name="lat" id="lat">
+                      <input type="hidden" name="long" id="long">
+                    </div>
+                    <div class="form-group">
+                      <label for="to">To</label>
+                      <input type="text" class="form-control" id="to" placeholder="Enter drop location">
+                    </div>
+                  </div>
+                    <div class="form-group">
+                        <label for="passengers" style="color: white;">Number of passengers</label>
+                        <select>
+                            <option>Choose..</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="journeyType" style="color: white;">Journey Type</label>
+                        <select>
+                            <option>Choose..</option>
+                            <option value="oneWay">One Way</option>
+                            <option value="return">Return</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+                <!--End of form-->
+                </div>
+            </div>
+          </div>
+    <!--End of Main Container-->
+
+    <!--Container 2-->
+    <div class="jumbotron jumbotron-fluid" id="j2">
+        <div class="conatiner" style="text-align: center;">
+            <h3>Track Your Ride</h3>
+            <button class="btn btn-primary">Track Ride</button>
+        </div>
+    </div>
+    <!--End of Container 2-->
+
+    <!--Container 3-->
+    <div class="container-fluid">
+        <h1 style="text-align: center;">WHY USE OUR SERVICE?</h1>
+            <div class="row">
+                <div class="col-sm">
+                    <h3>Very Cheap</h3>
+                    <img src="https://kabbee.com/assets/images/icon_why_5.svg">
+                    <p>Our  prices are the most cheapest</p>
+                </div>
+                <div class="col-sm">
+                    <h3>Fixed Fares</h3>
+                    <img src="https://kabbee.com/assets/images/icon_why_3.svg">
+                    <p>Feel relaxed, you don’t pay for traffic, poor routes or surge pricing.</p>
+                </div>
+                <div class="col-sm">
+                    <h3>30 mins free waiting</h3>
+                    <img src="https://kabbee.com/assets/images/icon_why_2.svg">
+                    <p>No rush, you have 30 mins. free waiting time with a meet & greet service.</p>
+                </div>
+                <div class="col-sm">
+                    <h3>Pay your way</h3>
+                    <img src="https://kabbee.com/assets/images/icon_why_1.svg">
+                    <p>Pay by cash, account or by card, the choice is yours.</p>
+                </div>
+                <div class="col-sm">
+                    <h3>Trusted and reliable</h3>
+                    <img src="https://kabbee.com/assets/images/icon_why_4.svg">
+                    <p>Licensed, vetted partners with 24/7 availability and customer support. Customer ratings strike off poor fleets.</p>
+                </div>
+            </div>
+    </div>
+    <!--End of Container 2-->
+
+    <!--Footer 1-->
+    <div class="container-fluid">
+        <div class="card">
+            <div class="card-body">
+                <div class="container" id="container2">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h5 class="card-title">Address</h5>
+                            <div id="map"></div>
+                        </div>
+                        <div class="col-md-4">
+                                <img src="https://img.icons8.com/android/96/000000/phone.png"><strong>Phone</strong>
+                                <p class="lead">+91 97912 01860</p>
+                        </div>
+                        <div class="col-md-4">
+                                <img src="https://img.icons8.com/wired/64/000000/email.png" class="img-fluid"><strong>Email</strong>
+                                <p class="lead"><a href="mailto:sarvesh4232@gmail.com">sarvesh4232@gmail.com</a></p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!--End of Footer 1-->
+
+    <!--Footer 2-->
+    <footer class="bg-warning">
+        <p class="lead">&copy; 2019 Sarvesh</p>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+ 
+        <!--Address location map script-->
+    <script>
+        // Initialize and add the map
+        function initMap() {
+          // The location of Uluru
+          var uluru = {lat: 13.020942, lng: 80.217351};
+          // The map, centered at Uluru
+          var map = new google.maps.Map(
+              document.getElementById('map'), {zoom: 15, center: uluru});
+          // The marker, positioned at Uluru
+          var marker = new google.maps.Marker({position: uluru, map: map});
+        }
+</script>
+   <script async
+   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCV_e29ZNv8f0S3-2IzNwIPqc-ycslxNBE&callback=initMap">
+</script>
+<!--End of Address location map script-->
+           <!--Place Autocomplete Script-->
+           <!-- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCV_e29ZNv8f0S3-2IzNwIPqc-ycslxNBE&libraries=places&callback=initAutocomplete" async defer></script>    -->
+    
+           <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDgJNbx7wr01p7h2a0psOsVieTc7Ge1LB8&amp;libraries=places&amp;callback=initAutocomplete" async="" defer=""></script>
+
+    
+    <script type="text/javascript">
+            function initAutocomplete() {
+              // Create the autocomplete object, restricting the search to geographical
+              // location types.
+              autocomplete = new google.maps.places.Autocomplete(
+                  /** @type {!HTMLInputElement} */(document.getElementById('from')),
+                  {types: ['geocode']});
+          
+              // When the user selects an address from the dropdown, populate the address
+              // fields in the form.
+              autocomplete.addListener('place_changed', fillInAddress);
+            }
+          
+            function fillInAddress() {
+              // Get the place details from the autocomplete object.
+              var place = autocomplete.getPlace();
+          
+            }
+            </script>
+  </body>
+</html>
