@@ -1,0 +1,28 @@
+        h3{
+            text-align: center;
+        }
+        .col-sm p{
+            text-align: center;
+        }
+        footer p{
+            text-align: center;
+        }
+        #j1{
+            background-image: url("../imgs/taxi-bg.jpg");
+        }
+        #f1{
+            background-color: rgba(252, 223, 3,0);
+        }
+        nav{
+            background-color: rgb(252, 223, 3);
+            font-weight: 600;
+        }
+        #j2{
+            background-image: url("https://www.balena.io/blog/content/images/2018/12/2018-01_GPS_tracking.jpg");
+            background-size: cover;
+        }
+        #map {
+            width: 100%;
+            height: 400px;
+            background-color: grey;
+        }
